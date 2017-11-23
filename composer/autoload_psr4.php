@@ -10,6 +10,7 @@ return array(
     'Wikimedia\\Composer\\' => array($vendorDir . '/wikimedia/composer-merge-plugin/src'),
     'Wikimedia\\Assert\\Test\\' => array($vendorDir . '/wikimedia/assert/tests/phpunit'),
     'Wikimedia\\Assert\\' => array($vendorDir . '/wikimedia/assert/src'),
+    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
     'RemexHtml\\' => array($vendorDir . '/wikimedia/remex-html/RemexHtml'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
