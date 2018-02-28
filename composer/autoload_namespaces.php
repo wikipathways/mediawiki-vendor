@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir).'/mediawiki';
 return array(
     'Liuggio' => array($vendorDir . '/liuggio/statsd-php-client/src'),
     'Less' => array($vendorDir . '/oyejorge/less.php/lib'),
+    'ComposerVendorHtaccessCreator' => array($baseDir . '/includes/composer'),
     'ComposerHookHandler' => array($baseDir . '/includes/composer'),
     '' => array($vendorDir . '/cssjanus/cssjanus/src'),
 );

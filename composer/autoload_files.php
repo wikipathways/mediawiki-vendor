@@ -11,4 +11,5 @@ return array(
     'd55c27a601de788b19a09b7d057d07ae' => $vendorDir . '/wikimedia/relpath/src/RelPath.php',
     'c50606d667a3fde2b80a955639479d3d' => $vendorDir . '/wikimedia/timestamp/src/defines.php',
     '38db717deddb215de53e36c2c0bc9e7e' => $baseDir . '/includes/compat/Timestamp.php',
+    '6cb4618306f50213e6ab148ba36f1631' => $baseDir . '/extensions/ImageMap/ImageMap.php',
 );

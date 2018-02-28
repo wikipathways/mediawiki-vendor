@@ -1,5 +1,287 @@
 [
     {
+        "name": "composer/installers",
+        "version": "v1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "049797d727261bf27f2690430d935067710049c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/049797d727261bf27f2690430d935067710049c2",
+            "reference": "049797d727261bf27f2690430d935067710049c2",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "^4.8.36"
+        },
+        "time": "2017-12-29T09:13:20+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Eliasis",
+            "Hurad",
+            "ImageCMS",
+            "Kanboard",
+            "Lan Management System",
+            "MODX Evo",
+            "Mautic",
+            "Maya",
+            "OXID",
+            "Plentymarkets",
+            "Porto",
+            "RadPHP",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "eZ Platform",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "itop",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lavalite",
+            "lithium",
+            "magento",
+            "majima",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "modx",
+            "moodle",
+            "osclass",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "pxcms",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "sydes",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "composer/semver",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/semver.git",
+            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
+            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.2 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.5 || ^5.0.5",
+            "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+        },
+        "time": "2016-08-30T16:08:34+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Semver\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nils Adermann",
+                "email": "naderman@naderman.de",
+                "homepage": "http://www.naderman.de"
+            },
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            },
+            {
+                "name": "Rob Bast",
+                "email": "rob.bast@gmail.com",
+                "homepage": "http://robbast.nl"
+            }
+        ],
+        "description": "Semver library that offers utilities, version constraint parsing and validation.",
+        "keywords": [
+            "semantic",
+            "semver",
+            "validation",
+            "versioning"
+        ]
+    },
+    {
+        "name": "cssjanus/cssjanus",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cssjanus/php-cssjanus.git",
+            "reference": "0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cssjanus/php-cssjanus/zipball/0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa",
+            "reference": "0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "0.8.*",
+            "phpunit/phpunit": "4.8.*",
+            "squizlabs/php_codesniffer": "2.3.*"
+        },
+        "time": "2017-03-14T20:57:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "description": "Convert CSS stylesheets between left-to-right and right-to-left."
+    },
+    {
+        "name": "eloquent/composer-npm-bridge",
+        "version": "4.0.1",
+        "version_normalized": "4.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/eloquent/composer-npm-bridge.git",
+            "reference": "4e6346a0162a228caf30bc10ab8442cb6be87db0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/eloquent/composer-npm-bridge/zipball/4e6346a0162a228caf30bc10ab8442cb6be87db0",
+            "reference": "4e6346a0162a228caf30bc10ab8442cb6be87db0",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1",
+            "php": ">=7"
+        },
+        "require-dev": {
+            "composer/composer": "dev-master",
+            "eloquent/phony-phpunit": "^2",
+            "errors/exceptions": "^0.2",
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2017-09-19T10:05:43+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Eloquent\\Composer\\NpmBridge\\NpmBridgePlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Eloquent\\Composer\\NpmBridge\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Erin Millard",
+                "email": "ezzatron@gmail.com",
+                "homepage": "http://ezzatron.com/"
+            }
+        ],
+        "description": "NPM integration for Composer packages.",
+        "homepage": "https://github.com/eloquent/composer-npm-bridge",
+        "keywords": [
+            "Bridge",
+            "composer",
+            "composer-plugin",
+            "integration",
+            "npm",
+            "package",
+            "plugin"
+        ]
+    },
+    {
         "name": "liuggio/statsd-php-client",
         "version": "v1.0.18",
         "version_normalized": "1.0.18.0",
@@ -101,6 +383,251 @@
         "homepage": "https://www.mediawiki.org/wiki/at-ease"
     },
     {
+        "name": "oojs/oojs-ui",
+        "version": "v0.21.1",
+        "version_normalized": "0.21.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikimedia/oojs-ui.git",
+            "reference": "59965a94e168c23d9dbb154d8a63f6a1abc7f537"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikimedia/oojs-ui/zipball/59965a94e168c23d9dbb154d8a63f6a1abc7f537",
+            "reference": "59965a94e168c23d9dbb154d8a63f6a1abc7f537",
+            "shasum": ""
+        },
+        "require": {
+            "mediawiki/at-ease": "1.1.0",
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "0.6.0",
+            "phpunit/phpunit": "4.8.21"
+        },
+        "time": "2017-04-18T23:06:13+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "php/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Timo Tijhof",
+                "email": "krinklemail@gmail.com"
+            },
+            {
+                "name": "Bartosz Dziewoński",
+                "email": "matma.rex@gmail.com"
+            },
+            {
+                "name": "Ed Sanders",
+                "email": "esanders@wikimedia.org"
+            },
+            {
+                "name": "James D. Forrester",
+                "email": "jforrester@wikimedia.org"
+            },
+            {
+                "name": "Kirsten Menger-Anderson",
+                "email": "kmenger@wikimedia.org"
+            },
+            {
+                "name": "Rob Moen",
+                "email": "rmoen@wikimedia.org"
+            },
+            {
+                "name": "Roan Kattouw",
+                "email": "roan@wikimedia.org"
+            },
+            {
+                "name": "Trevor Parscal",
+                "email": "trevor@wikimedia.org"
+            },
+            {
+                "name": "Kunal Mehta",
+                "email": "legoktm@gmail.com"
+            },
+            {
+                "name": "Prateek Saxena",
+                "email": "prtksxna@gmail.com"
+            }
+        ],
+        "description": "Provides library of common widgets, layouts, and windows.",
+        "homepage": "https://www.mediawiki.org/wiki/OOjs_UI"
+    },
+    {
+        "name": "oyejorge/less.php",
+        "version": "v1.7.0.14",
+        "version_normalized": "1.7.0.14",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oyejorge/less.php.git",
+            "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oyejorge/less.php/zipball/42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+            "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.8.24"
+        },
+        "time": "2017-03-28T22:19:25+00:00",
+        "bin": [
+            "bin/lessc"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Less": "lib/"
+            },
+            "classmap": [
+                "lessc.inc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Matt Agar",
+                "homepage": "https://github.com/agar"
+            },
+            {
+                "name": "Martin Jantošovič",
+                "homepage": "https://github.com/Mordred"
+            },
+            {
+                "name": "Josh Schmidt",
+                "homepage": "https://github.com/oyejorge"
+            }
+        ],
+        "description": "PHP port of the Javascript version of LESS http://lesscss.org (Originally maintained by Josh Schmidt)",
+        "homepage": "http://lessphp.gpeasy.com",
+        "keywords": [
+            "css",
+            "less",
+            "less.js",
+            "lesscss",
+            "php",
+            "stylesheet"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-10T12:19:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "symfony/process",
+        "version": "v3.4.4",
+        "version_normalized": "3.4.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/process.git",
+            "reference": "09a5172057be8fc677840e591b17f385e58c7c0d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/process/zipball/09a5172057be8fc677840e591b17f385e58c7c0d",
+            "reference": "09a5172057be8fc677840e591b17f385e58c7c0d",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2018-01-29T09:03:43+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Process\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "https://symfony.com"
+    },
+    {
         "name": "wikimedia/assert",
         "version": "v0.2.2",
         "version_normalized": "0.2.2.0",
@@ -196,6 +723,61 @@
         "homepage": "https://www.mediawiki.org/wiki/base_convert"
     },
     {
+        "name": "wikimedia/cdb",
+        "version": "1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikimedia/cdb.git",
+            "reference": "d49d96232f045311dc1f21bf0d7e40adf82a1f1d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikimedia/cdb/zipball/d49d96232f045311dc1f21bf0d7e40adf82a1f1d",
+            "reference": "d49d96232f045311dc1f21bf0d7e40adf82a1f1d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "0.9",
+            "mediawiki/mediawiki-codesniffer": "0.5.0",
+            "phpunit/phpunit": "4.6.*"
+        },
+        "time": "2016-05-29T07:39:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Daniel Kinzler"
+            },
+            {
+                "name": "Tim Starling",
+                "email": "tstarling@wikimedia.org"
+            },
+            {
+                "name": "Chad Horohoe",
+                "email": "chad@wikimedia.org"
+            },
+            {
+                "name": "Ori Livneh",
+                "email": "ori@wikimedia.org"
+            }
+        ],
+        "description": "Constant Database (CDB) wrapper library for PHP. Provides pure-PHP fallback when dba_* functions are absent.",
+        "homepage": "https://www.mediawiki.org/wiki/CDB"
+    },
+    {
         "name": "wikimedia/cldr-plural-rule-parser",
         "version": "v1.0.0",
         "version_normalized": "1.0.0.0",
@@ -244,35 +826,43 @@
         "homepage": "https://www.mediawiki.org/wiki/CLDRPluralRuleParser"
     },
     {
-        "name": "wikimedia/relpath",
-        "version": "1.0.3",
-        "version_normalized": "1.0.3.0",
+        "name": "wikimedia/composer-merge-plugin",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/wikimedia/RelPath.git",
-            "reference": "ee38e19f3b059e5cec8863b03e35a451b8f35106"
+            "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+            "reference": "ca453f9f13d8b05f86f20ea10be992a782e6f78c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/RelPath/zipball/ee38e19f3b059e5cec8863b03e35a451b8f35106",
-            "reference": "ee38e19f3b059e5cec8863b03e35a451b8f35106",
+            "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/ca453f9f13d8b05f86f20ea10be992a782e6f78c",
+            "reference": "ca453f9f13d8b05f86f20ea10be992a782e6f78c",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3"
+            "composer-plugin-api": "^1.0",
+            "php": ">=5.3.2"
         },
         "require-dev": {
-            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
-            "mediawiki/mediawiki-codesniffer": "^0.4.0.0",
-            "phpunit/phpunit": "^4.8.9.0"
+            "composer/composer": "~1.0.0",
+            "jakub-onderka/php-parallel-lint": "~0.8",
+            "phpunit/phpunit": "~4.8|~5.0",
+            "squizlabs/php_codesniffer": "~2.1.0"
         },
-        "time": "2015-09-29T21:17:03+00:00",
-        "type": "library",
+        "time": "2017-03-13T16:52:55+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            },
+            "class": "Wikimedia\\Composer\\MergePlugin"
+        },
         "installation-source": "dist",
         "autoload": {
-            "files": [
-                "src/RelPath.php"
-            ]
+            "psr-4": {
+                "Wikimedia\\Composer\\": "src/"
+            }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -280,105 +870,11 @@
         ],
         "authors": [
             {
-                "name": "Ori Livneh",
-                "email": "ori@wikimedia.org"
+                "name": "Bryan Davis",
+                "email": "bd808@wikimedia.org"
             }
         ],
-        "description": "Compute a relative filepath between two paths.",
-        "homepage": "https://www.mediawiki.org/wiki/RelPath"
-    },
-    {
-        "name": "wikimedia/running-stat",
-        "version": "v1.1.0",
-        "version_normalized": "1.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/RunningStat.git",
-            "reference": "9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/RunningStat/zipball/9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd",
-            "reference": "9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
-            "mediawiki/mediawiki-codesniffer": "^0.5.0.0",
-            "phpunit/phpunit": "4.6.*"
-        },
-        "time": "2015-10-28T22:29:15+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Ori Livneh",
-                "email": "ori@wikimedia.org"
-            }
-        ],
-        "description": "PHP implementations of online statistical algorithms",
-        "homepage": "https://www.mediawiki.org/wiki/RunningStat"
-    },
-    {
-        "name": "zordius/lightncandy",
-        "version": "v0.23",
-        "version_normalized": "0.23.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/zordius/lightncandy.git",
-            "reference": "5753dec40ddaf8b5c70a1837bf0ff4d8e8647506"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/zordius/lightncandy/zipball/5753dec40ddaf8b5c70a1837bf0ff4d8e8647506",
-            "reference": "5753dec40ddaf8b5c70a1837bf0ff4d8e8647506",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.0.17"
-        },
-        "time": "2015-11-05T07:14:57+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/lightncandy.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Zordius Chen",
-                "email": "zordius@yahoo-inc.com"
-            }
-        ],
-        "description": "An extremely fast PHP implementation of handlebars ( http://handlebarsjs.com/ ) and mustache ( http://mustache.github.io/ ).",
-        "homepage": "https://github.com/zordius/lightncandy",
-        "keywords": [
-            "handlebars",
-            "logicless",
-            "mustache",
-            "php",
-            "template"
-        ]
+        "description": "Composer plugin to merge multiple composer.json files"
     },
     {
         "name": "wikimedia/html-formatter",
@@ -469,257 +965,6 @@
         "homepage": "https://github.com/wikimedia/IPSet"
     },
     {
-        "name": "wikimedia/cdb",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/cdb.git",
-            "reference": "d49d96232f045311dc1f21bf0d7e40adf82a1f1d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/cdb/zipball/d49d96232f045311dc1f21bf0d7e40adf82a1f1d",
-            "reference": "d49d96232f045311dc1f21bf0d7e40adf82a1f1d",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "0.9",
-            "mediawiki/mediawiki-codesniffer": "0.5.0",
-            "phpunit/phpunit": "4.6.*"
-        },
-        "time": "2016-05-29T07:39:26+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Daniel Kinzler"
-            },
-            {
-                "name": "Tim Starling",
-                "email": "tstarling@wikimedia.org"
-            },
-            {
-                "name": "Chad Horohoe",
-                "email": "chad@wikimedia.org"
-            },
-            {
-                "name": "Ori Livneh",
-                "email": "ori@wikimedia.org"
-            }
-        ],
-        "description": "Constant Database (CDB) wrapper library for PHP. Provides pure-PHP fallback when dba_* functions are absent.",
-        "homepage": "https://www.mediawiki.org/wiki/CDB"
-    },
-    {
-        "name": "wikimedia/wrappedstring",
-        "version": "v2.2.0",
-        "version_normalized": "2.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/WrappedString.git",
-            "reference": "738a89411fec30cb381b88905cacbcbe082db6a9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/WrappedString/zipball/738a89411fec30cb381b88905cacbcbe082db6a9",
-            "reference": "738a89411fec30cb381b88905cacbcbe082db6a9",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
-            "mediawiki/mediawiki-codesniffer": "0.4.0",
-            "phpunit/phpunit": "^4.7.7.0"
-        },
-        "time": "2016-07-21T00:41:10+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "WrappedString\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Timo Tijhof",
-                "email": "krinklemail@gmail.com"
-            }
-        ],
-        "description": "Automatically compact sequentially-outputted strings that share a common prefix / suffix pair.",
-        "homepage": "https://www.mediawiki.org/wiki/WrappedString"
-    },
-    {
-        "name": "wikimedia/scoped-callback",
-        "version": "v1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/ScopedCallback.git",
-            "reference": "73985f15be3edb7b823db31f367b780769378d2b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/ScopedCallback/zipball/73985f15be3edb7b823db31f367b780769378d2b",
-            "reference": "73985f15be3edb7b823db31f367b780769378d2b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "0.9.2",
-            "mediawiki/mediawiki-codesniffer": "0.7.2",
-            "phpunit/phpunit": "4.8.27"
-        },
-        "time": "2016-09-29T07:03:03+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Aaron Schulz",
-                "email": "aschulz@wikimedia.org"
-            }
-        ],
-        "description": "Class for asserting that a callback happens when a dummy object leaves scope",
-        "homepage": "https://www.mediawiki.org/wiki/ScopedCallback"
-    },
-    {
-        "name": "wikimedia/wait-condition-loop",
-        "version": "v1.0.1",
-        "version_normalized": "1.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/WaitConditionLoop.git",
-            "reference": "0321b8ca6a0f701f96e04e5e8e6d3e244ab05338"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/WaitConditionLoop/zipball/0321b8ca6a0f701f96e04e5e8e6d3e244ab05338",
-            "reference": "0321b8ca6a0f701f96e04e5e8e6d3e244ab05338",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "0.9.2",
-            "mediawiki/mediawiki-codesniffer": "0.7.2",
-            "phpunit/phpunit": "4.8.24"
-        },
-        "time": "2016-10-01T06:58:30+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Aaron Schulz",
-                "email": "aschulz@wikimedia.org"
-            }
-        ],
-        "description": "Wait loop that reaches a condition or times out",
-        "homepage": "https://www.mediawiki.org/wiki/WaitConditionLoop"
-    },
-    {
-        "name": "composer/semver",
-        "version": "1.4.2",
-        "version_normalized": "1.4.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/composer/semver.git",
-            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-            "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3.2 || ^7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.5 || ^5.0.5",
-            "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
-        },
-        "time": "2016-08-30T16:08:34+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Composer\\Semver\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nils Adermann",
-                "email": "naderman@naderman.de",
-                "homepage": "http://www.naderman.de"
-            },
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            },
-            {
-                "name": "Rob Bast",
-                "email": "rob.bast@gmail.com",
-                "homepage": "http://robbast.nl"
-            }
-        ],
-        "description": "Semver library that offers utilities, version constraint parsing and validation.",
-        "keywords": [
-            "semantic",
-            "semver",
-            "validation",
-            "versioning"
-        ]
-    },
-    {
         "name": "wikimedia/php-session-serializer",
         "version": "v1.0.4",
         "version_normalized": "1.0.4.0",
@@ -766,30 +1011,116 @@
         "homepage": "https://www.mediawiki.org/wiki/Php-session-serializer"
     },
     {
-        "name": "wikimedia/utfnormal",
-        "version": "v1.1.0",
-        "version_normalized": "1.1.0.0",
+        "name": "wikimedia/relpath",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/wikimedia/utfnormal.git",
-            "reference": "32f838c175ddefd0fdbe09e15b919d166ed5b39f"
+            "url": "https://github.com/wikimedia/RelPath.git",
+            "reference": "ee38e19f3b059e5cec8863b03e35a451b8f35106"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/utfnormal/zipball/32f838c175ddefd0fdbe09e15b919d166ed5b39f",
-            "reference": "32f838c175ddefd0fdbe09e15b919d166ed5b39f",
+            "url": "https://api.github.com/repos/wikimedia/RelPath/zipball/ee38e19f3b059e5cec8863b03e35a451b8f35106",
+            "reference": "ee38e19f3b059e5cec8863b03e35a451b8f35106",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
         "require-dev": {
+            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
+            "mediawiki/mediawiki-codesniffer": "^0.4.0.0",
+            "phpunit/phpunit": "^4.8.9.0"
+        },
+        "time": "2015-09-29T21:17:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/RelPath.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ori Livneh",
+                "email": "ori@wikimedia.org"
+            }
+        ],
+        "description": "Compute a relative filepath between two paths.",
+        "homepage": "https://www.mediawiki.org/wiki/RelPath"
+    },
+    {
+        "name": "wikimedia/remex-html",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikimedia/mediawiki-libs-RemexHtml.git",
+            "reference": "3c596e5c66557ed7f37d8a543bc233d7fa80a52f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikimedia/mediawiki-libs-RemexHtml/zipball/3c596e5c66557ed7f37d8a543bc233d7fa80a52f",
+            "reference": "3c596e5c66557ed7f37d8a543bc233d7fa80a52f",
+            "shasum": ""
+        },
+        "require": {
             "ext-mbstring": "*",
-            "jakub-onderka/php-parallel-lint": "0.9.*",
-            "mediawiki/mediawiki-codesniffer": "0.4.0",
+            "wikimedia/utfnormal": "1.1.0"
+        },
+        "require-dev": {
+            "mediawiki/mediawiki-codesniffer": "0.7.2",
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2017-03-14T05:28:14+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RemexHtml\\": "RemexHtml/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Tim Starling",
+                "email": "tstarling@wikimedia.org"
+            }
+        ],
+        "description": "Fast HTML 5 parser"
+    },
+    {
+        "name": "wikimedia/running-stat",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikimedia/RunningStat.git",
+            "reference": "9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikimedia/RunningStat/zipball/9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd",
+            "reference": "9d7170d3eeb6f418b9f0266b2bbe6e4681ab73dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
+            "mediawiki/mediawiki-codesniffer": "^0.5.0.0",
             "phpunit/phpunit": "4.6.*"
         },
-        "time": "2016-05-24T13:13:30+00:00",
+        "time": "2015-10-28T22:29:15+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -803,61 +1134,56 @@
         ],
         "authors": [
             {
-                "name": "Brion Vibber",
-                "email": "bvibber@wikimedia.org"
+                "name": "Ori Livneh",
+                "email": "ori@wikimedia.org"
             }
         ],
-        "description": "Contains Unicode normalization routines, including both pure PHP implementations and automatic use of the 'intl' PHP extension when present",
-        "homepage": "https://www.mediawiki.org/wiki/utfnormal"
+        "description": "PHP implementations of online statistical algorithms",
+        "homepage": "https://www.mediawiki.org/wiki/RunningStat"
     },
     {
-        "name": "psr/log",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
+        "name": "wikimedia/scoped-callback",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            "url": "https://github.com/wikimedia/ScopedCallback.git",
+            "reference": "73985f15be3edb7b823db31f367b780769378d2b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "url": "https://api.github.com/repos/wikimedia/ScopedCallback/zipball/73985f15be3edb7b823db31f367b780769378d2b",
+            "reference": "73985f15be3edb7b823db31f367b780769378d2b",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.0"
+            "php": ">=5.5.9"
         },
-        "time": "2016-10-10T12:19:37+00:00",
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "0.7.2",
+            "phpunit/phpunit": "4.8.27"
+        },
+        "time": "2016-09-29T07:03:03+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.x-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "Psr\\Log\\": "Psr/Log/"
-            }
+            "classmap": [
+                "src/"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "MIT"
+            "GPL-2.0+"
         ],
         "authors": [
             {
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "name": "Aaron Schulz",
+                "email": "aschulz@wikimedia.org"
             }
         ],
-        "description": "Common interface for logging libraries",
-        "homepage": "https://github.com/php-fig/log",
-        "keywords": [
-            "log",
-            "psr",
-            "psr-3"
-        ]
+        "description": "Class for asserting that a callback happens when a dummy object leaves scope",
+        "homepage": "https://www.mediawiki.org/wiki/ScopedCallback"
     },
     {
         "name": "wikimedia/timestamp",
@@ -907,231 +1233,124 @@
         "homepage": "https://www.mediawiki.org/wiki/Timestamp"
     },
     {
-        "name": "wikimedia/remex-html",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
+        "name": "wikimedia/utfnormal",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/wikimedia/mediawiki-libs-RemexHtml.git",
-            "reference": "3c596e5c66557ed7f37d8a543bc233d7fa80a52f"
+            "url": "https://github.com/wikimedia/utfnormal.git",
+            "reference": "32f838c175ddefd0fdbe09e15b919d166ed5b39f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/mediawiki-libs-RemexHtml/zipball/3c596e5c66557ed7f37d8a543bc233d7fa80a52f",
-            "reference": "3c596e5c66557ed7f37d8a543bc233d7fa80a52f",
+            "url": "https://api.github.com/repos/wikimedia/utfnormal/zipball/32f838c175ddefd0fdbe09e15b919d166ed5b39f",
+            "reference": "32f838c175ddefd0fdbe09e15b919d166ed5b39f",
             "shasum": ""
         },
         "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
             "ext-mbstring": "*",
-            "wikimedia/utfnormal": "1.1.0"
+            "jakub-onderka/php-parallel-lint": "0.9.*",
+            "mediawiki/mediawiki-codesniffer": "0.4.0",
+            "phpunit/phpunit": "4.6.*"
         },
-        "require-dev": {
-            "mediawiki/mediawiki-codesniffer": "0.7.2",
-            "phpunit/phpunit": "4.*"
-        },
-        "time": "2017-03-14T05:28:14+00:00",
+        "time": "2016-05-24T13:13:30+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "RemexHtml\\": "RemexHtml/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Tim Starling",
-                "email": "tstarling@wikimedia.org"
-            }
-        ],
-        "description": "Fast HTML 5 parser"
-    },
-    {
-        "name": "wikimedia/composer-merge-plugin",
-        "version": "v1.4.0",
-        "version_normalized": "1.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-            "reference": "ca453f9f13d8b05f86f20ea10be992a782e6f78c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/ca453f9f13d8b05f86f20ea10be992a782e6f78c",
-            "reference": "ca453f9f13d8b05f86f20ea10be992a782e6f78c",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0",
-            "php": ">=5.3.2"
-        },
-        "require-dev": {
-            "composer/composer": "~1.0.0",
-            "jakub-onderka/php-parallel-lint": "~0.8",
-            "phpunit/phpunit": "~4.8|~5.0",
-            "squizlabs/php_codesniffer": "~2.1.0"
-        },
-        "time": "2017-03-13T16:52:55+00:00",
-        "type": "composer-plugin",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3.x-dev"
-            },
-            "class": "Wikimedia\\Composer\\MergePlugin"
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Wikimedia\\Composer\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Bryan Davis",
-                "email": "bd808@wikimedia.org"
-            }
-        ],
-        "description": "Composer plugin to merge multiple composer.json files"
-    },
-    {
-        "name": "cssjanus/cssjanus",
-        "version": "v1.2.0",
-        "version_normalized": "1.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/cssjanus/php-cssjanus.git",
-            "reference": "0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/cssjanus/php-cssjanus/zipball/0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa",
-            "reference": "0fd44d8a3f1f0f10bfb500b6b595240bf6415ffa",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4"
-        },
-        "require-dev": {
-            "jakub-onderka/php-parallel-lint": "0.8.*",
-            "phpunit/phpunit": "4.8.*",
-            "squizlabs/php_codesniffer": "2.3.*"
-        },
-        "time": "2017-03-14T20:57:08+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "Apache-2.0"
-        ],
-        "description": "Convert CSS stylesheets between left-to-right and right-to-left."
-    },
-    {
-        "name": "oyejorge/less.php",
-        "version": "v1.7.0.14",
-        "version_normalized": "1.7.0.14",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/oyejorge/less.php.git",
-            "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/oyejorge/less.php/zipball/42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
-            "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.8.24"
-        },
-        "time": "2017-03-28T22:19:25+00:00",
-        "bin": [
-            "bin/lessc"
-        ],
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Less": "lib/"
-            },
             "classmap": [
-                "lessc.inc.php"
+                "src/"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "Apache-2.0"
+            "GPL-2.0+"
         ],
         "authors": [
             {
-                "name": "Matt Agar",
-                "homepage": "https://github.com/agar"
-            },
-            {
-                "name": "Martin Jantošovič",
-                "homepage": "https://github.com/Mordred"
-            },
-            {
-                "name": "Josh Schmidt",
-                "homepage": "https://github.com/oyejorge"
+                "name": "Brion Vibber",
+                "email": "bvibber@wikimedia.org"
             }
         ],
-        "description": "PHP port of the Javascript version of LESS http://lesscss.org (Originally maintained by Josh Schmidt)",
-        "homepage": "http://lessphp.gpeasy.com",
-        "keywords": [
-            "css",
-            "less",
-            "less.js",
-            "lesscss",
-            "php",
-            "stylesheet"
-        ]
+        "description": "Contains Unicode normalization routines, including both pure PHP implementations and automatic use of the 'intl' PHP extension when present",
+        "homepage": "https://www.mediawiki.org/wiki/utfnormal"
     },
     {
-        "name": "oojs/oojs-ui",
-        "version": "v0.21.1",
-        "version_normalized": "0.21.1.0",
+        "name": "wikimedia/wait-condition-loop",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/wikimedia/oojs-ui.git",
-            "reference": "59965a94e168c23d9dbb154d8a63f6a1abc7f537"
+            "url": "https://github.com/wikimedia/WaitConditionLoop.git",
+            "reference": "0321b8ca6a0f701f96e04e5e8e6d3e244ab05338"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikimedia/oojs-ui/zipball/59965a94e168c23d9dbb154d8a63f6a1abc7f537",
-            "reference": "59965a94e168c23d9dbb154d8a63f6a1abc7f537",
+            "url": "https://api.github.com/repos/wikimedia/WaitConditionLoop/zipball/0321b8ca6a0f701f96e04e5e8e6d3e244ab05338",
+            "reference": "0321b8ca6a0f701f96e04e5e8e6d3e244ab05338",
             "shasum": ""
         },
         "require": {
-            "mediawiki/at-ease": "1.1.0",
             "php": ">=5.5.9"
         },
         "require-dev": {
             "jakub-onderka/php-parallel-lint": "0.9.2",
-            "mediawiki/mediawiki-codesniffer": "0.6.0",
-            "phpunit/phpunit": "4.8.21"
+            "mediawiki/mediawiki-codesniffer": "0.7.2",
+            "phpunit/phpunit": "4.8.24"
         },
-        "time": "2017-04-18T23:06:13+00:00",
+        "time": "2016-10-01T06:58:30+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "classmap": [
-                "php/"
+                "src/"
             ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Aaron Schulz",
+                "email": "aschulz@wikimedia.org"
+            }
+        ],
+        "description": "Wait loop that reaches a condition or times out",
+        "homepage": "https://www.mediawiki.org/wiki/WaitConditionLoop"
+    },
+    {
+        "name": "wikimedia/wrappedstring",
+        "version": "v2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikimedia/WrappedString.git",
+            "reference": "738a89411fec30cb381b88905cacbcbe082db6a9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikimedia/WrappedString/zipball/738a89411fec30cb381b88905cacbcbe082db6a9",
+            "reference": "738a89411fec30cb381b88905cacbcbe082db6a9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "jakub-onderka/php-parallel-lint": "^0.9.0.0",
+            "mediawiki/mediawiki-codesniffer": "0.4.0",
+            "phpunit/phpunit": "^4.7.7.0"
+        },
+        "time": "2016-07-21T00:41:10+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WrappedString\\": "src/"
+            }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -1141,79 +1360,38 @@
             {
                 "name": "Timo Tijhof",
                 "email": "krinklemail@gmail.com"
-            },
-            {
-                "name": "Bartosz Dziewoński",
-                "email": "matma.rex@gmail.com"
-            },
-            {
-                "name": "Ed Sanders",
-                "email": "esanders@wikimedia.org"
-            },
-            {
-                "name": "James D. Forrester",
-                "email": "jforrester@wikimedia.org"
-            },
-            {
-                "name": "Kirsten Menger-Anderson",
-                "email": "kmenger@wikimedia.org"
-            },
-            {
-                "name": "Rob Moen",
-                "email": "rmoen@wikimedia.org"
-            },
-            {
-                "name": "Roan Kattouw",
-                "email": "roan@wikimedia.org"
-            },
-            {
-                "name": "Trevor Parscal",
-                "email": "trevor@wikimedia.org"
-            },
-            {
-                "name": "Kunal Mehta",
-                "email": "legoktm@gmail.com"
-            },
-            {
-                "name": "Prateek Saxena",
-                "email": "prtksxna@gmail.com"
             }
         ],
-        "description": "Provides library of common widgets, layouts, and windows.",
-        "homepage": "https://www.mediawiki.org/wiki/OOjs_UI"
+        "description": "Automatically compact sequentially-outputted strings that share a common prefix / suffix pair.",
+        "homepage": "https://www.mediawiki.org/wiki/WrappedString"
     },
     {
-        "name": "symfony/process",
-        "version": "v3.3.13",
-        "version_normalized": "3.3.13.0",
+        "name": "zordius/lightncandy",
+        "version": "v0.23",
+        "version_normalized": "0.23.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/process.git",
-            "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
+            "url": "https://github.com/zordius/lightncandy.git",
+            "reference": "5753dec40ddaf8b5c70a1837bf0ff4d8e8647506"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
-            "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
+            "url": "https://api.github.com/repos/zordius/lightncandy/zipball/5753dec40ddaf8b5c70a1837bf0ff4d8e8647506",
+            "reference": "5753dec40ddaf8b5c70a1837bf0ff4d8e8647506",
             "shasum": ""
         },
         "require": {
-            "php": "^5.5.9|>=7.0.8"
+            "php": ">=5.3.0"
         },
-        "time": "2017-11-13T15:31:11+00:00",
+        "require-dev": {
+            "phpunit/phpunit": "4.0.17"
+        },
+        "time": "2015-11-05T07:14:57+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.3-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Process\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
+            "classmap": [
+                "src/lightncandy.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1222,15 +1400,18 @@
         ],
         "authors": [
             {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
+                "name": "Zordius Chen",
+                "email": "zordius@yahoo-inc.com"
             }
         ],
-        "description": "Symfony Process Component",
-        "homepage": "https://symfony.com"
+        "description": "An extremely fast PHP implementation of handlebars ( http://handlebarsjs.com/ ) and mustache ( http://mustache.github.io/ ).",
+        "homepage": "https://github.com/zordius/lightncandy",
+        "keywords": [
+            "handlebars",
+            "logicless",
+            "mustache",
+            "php",
+            "template"
+        ]
     }
 ]
