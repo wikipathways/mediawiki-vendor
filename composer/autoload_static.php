@@ -24,7 +24,12 @@ class ComposerStaticInit_mediawiki_vendor
             'Wikimedia\\Assert\\' => 17,
             'WikiPathways\\GPML\\Tests\\' => 24,
             'WikiPathways\\GPML\\Maintenance\\' => 30,
+            'WikiPathways\\GPML\\Converter\\Tests\\' => 34,
+            'WikiPathways\\GPML\\Converter\\Maintenance\\' => 40,
             'WikiPathways\\GPML\\' => 18,
+            'WikiPathways\\GPMLConverter\\Tests\\' => 33,
+            'WikiPathways\\GPMLConverter\\Maintenance\\' => 39,
+            'WikiPathways\\GPMLConverter\\' => 27,
         ),
         'S' => 
         array (
@@ -40,9 +45,6 @@ class ComposerStaticInit_mediawiki_vendor
         ),
         'M' => 
         array (
-            'MediaWiki\\Extensions\\GPMLConverter\\Tests\\' => 41,
-            'MediaWiki\\Extensions\\GPMLConverter\\Maintenance\\' => 47,
-            'MediaWiki\\Extensions\\GPMLConverter\\' => 35,
             'MediaWiki\\Extension\\UserLoginLog\\' => 33,
         ),
         'E' => 
@@ -77,14 +79,38 @@ class ComposerStaticInit_mediawiki_vendor
         'WikiPathways\\GPML\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/tests/phpunit',
+            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/tests/phpunit',
         ),
         'WikiPathways\\GPML\\Maintenance\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/maintenance',
+            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/maintenance',
+        ),
+        'WikiPathways\\GPML\\Converter\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
+        ),
+        'WikiPathways\\GPML\\Converter\\Maintenance\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
         ),
         'WikiPathways\\GPML\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
+            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
+            2 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
+        ),
+        'WikiPathways\\GPMLConverter\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
+        ),
+        'WikiPathways\\GPMLConverter\\Maintenance\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
+        ),
+        'WikiPathways\\GPMLConverter\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
         ),
         'Symfony\\Component\\Process\\' => 
         array (
@@ -97,18 +123,6 @@ class ComposerStaticInit_mediawiki_vendor
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
-        'MediaWiki\\Extensions\\GPMLConverter\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
-        ),
-        'MediaWiki\\Extensions\\GPMLConverter\\Maintenance\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
-        ),
-        'MediaWiki\\Extensions\\GPMLConverter\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
         ),
         'MediaWiki\\Extension\\UserLoginLog\\' => 
         array (
@@ -513,6 +527,7 @@ class ComposerStaticInit_mediawiki_vendor
         'WikiPathways\\GPML\\AuthorInfoList' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/AuthorInfoList.php',
         'WikiPathways\\GPML\\Content' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Content.php',
         'WikiPathways\\GPML\\ContentHandler' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/ContentHandler.php',
+        'WikiPathways\\GPML\\Converter' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/Converter.php',
         'WikiPathways\\GPML\\Hook' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Hook.php',
         'Wikimedia\\Assert\\Assert' => __DIR__ . '/..' . '/wikimedia/assert/src/Assert.php',
         'Wikimedia\\Assert\\AssertionException' => __DIR__ . '/..' . '/wikimedia/assert/src/AssertionException.php',

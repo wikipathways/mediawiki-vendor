@@ -1366,6 +1366,235 @@
         "homepage": "https://www.mediawiki.org/wiki/WrappedString"
     },
     {
+        "name": "wikipathways/gpml",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML.git",
+            "reference": "5edf33f5436e849382328a9dab2bdedcf064cca1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/5edf33f5436e849382328a9dab2bdedcf064cca1",
+            "reference": "5edf33f5436e849382328a9dab2bdedcf064cca1",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "ext-json": "*",
+            "ext-xml": "*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "14.1.0",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-02-24T19:20:14+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "GPML"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "WikiPathways\\GPML\\Tests\\": "tests/phpunit",
+                "WikiPathways\\GPML\\Maintenance\\": "maintenance",
+                "WikiPathways\\GPML\\": "src"
+            }
+        },
+        "scripts": {
+            "phpunit": [
+                "php $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "phpdbg": [
+                "phpdbg -qrr $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "check": [
+                "parallel-lint . --exclude vendor --exclude node_modules",
+                "phpmd src text .phpmd.xml || :",
+                "phpcs -p -s src"
+            ],
+            "fix": [
+                "phpcbf src"
+            ]
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Mark A. Hershberger",
+                "email": "mah@nichework.com",
+                "role": "Contributor"
+            },
+            {
+                "name": "Anders Riutta",
+                "email": "anders.riutta@gladstone.ucsf.edu",
+                "role": "Developer"
+            }
+        ],
+        "description": "Handle GPML for WikiPathways.",
+        "homepage": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML",
+        "keywords": [
+            "convert",
+            "extension",
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML/tree/master",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML/issues"
+        }
+    },
+    {
+        "name": "wikipathways/gpml-converter",
+        "version": "dev-feature-mwupgrade",
+        "version_normalized": "dev-feature-mwupgrade",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter.git",
+            "reference": "2ef7cf0902abc875e3bb797681d5bc7084a41ce1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/2ef7cf0902abc875e3bb797681d5bc7084a41ce1",
+            "reference": "2ef7cf0902abc875e3bb797681d5bc7084a41ce1",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "eloquent/composer-npm-bridge": "^4",
+            "ext-json": "*",
+            "ext-xml": "*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "14.1.0",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-03-01T02:01:28+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "GPMLConverter"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "WikiPathways\\GPMLConverter\\Tests\\": "tests/phpunit",
+                "WikiPathways\\GPMLConverter\\Maintenance\\": "maintenance",
+                "WikiPathways\\GPMLConverter\\": "src"
+            }
+        },
+        "scripts": {
+            "phpunit": [
+                "php $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "phpdbg": [
+                "phpdbg -qrr $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "check": [
+                "parallel-lint . --exclude vendor --exclude node_modules",
+                "phpmd . text .phpmd.xml || :",
+                "phpcs -p -s"
+            ],
+            "fix": [
+                "phpcbf"
+            ]
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Anders",
+                "role": "Developer"
+            },
+            {
+                "name": "Mark A. Hershberger",
+                "email": "mah@nichework.com",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Convert GPML pathways to JSON.",
+        "homepage": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter",
+        "keywords": [
+            "convert",
+            "extension",
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/tree/feature-mwupgrade",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/issues"
+        }
+    },
+    {
+        "name": "wikipathways/wikipathways",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways.git",
+            "reference": "b8183d348f913bb4c7a4d5cbf609cf5bfb0cea7e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/b8183d348f913bb4c7a4d5cbf609cf5bfb0cea7e",
+            "reference": "b8183d348f913bb4c7a4d5cbf609cf5bfb0cea7e",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "php": ">=5.6.0",
+            "wikipathways/gpml": "dev-master",
+            "wikipathways/gpml-converter": "dev-feature-mwupgrade"
+        },
+        "time": "2018-03-01T02:06:36+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "WikiPathways"
+        },
+        "installation-source": "source",
+        "scripts": {
+            "lint": [
+                "parallel-lint --exclude vendor"
+            ],
+            "phpcs": [
+                "phpcs -p -s"
+            ],
+            "fix": [
+                "phpcbf --standard=/home/mah/work/code/mediawiki/codesniffer/MediaWiki"
+            ],
+            "pre-install-cmd": [
+                "ComposerHookHandler::onPreInstall"
+            ],
+            "pre-update-cmd": [
+                "ComposerHookHandler::onPreUpdate"
+            ],
+            "test": [
+                "composer lint",
+                "composer phpcs"
+            ]
+        },
+        "description": "Brings Wikipathways to life",
+        "homepage": "https://www.wikipathways.org/",
+        "keywords": [
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways/tree/master",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways/issues"
+        }
+    },
+    {
         "name": "zordius/lightncandy",
         "version": "v0.23",
         "version_normalized": "0.23.0.0",
