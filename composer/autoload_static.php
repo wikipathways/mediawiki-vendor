@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit_mediawiki_vendor
+class ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0
 {
     public static $files = array (
         'a24b5daa493ecb5e767c7d1592a8da36' => __DIR__ . '/..' . '/mediawiki/at-ease/src/Functions.php',
@@ -27,9 +27,6 @@ class ComposerStaticInit_mediawiki_vendor
             'WikiPathways\\GPML\\Converter\\Tests\\' => 34,
             'WikiPathways\\GPML\\Converter\\Maintenance\\' => 40,
             'WikiPathways\\GPML\\' => 18,
-            'WikiPathways\\GPMLConverter\\Tests\\' => 33,
-            'WikiPathways\\GPMLConverter\\Maintenance\\' => 39,
-            'WikiPathways\\GPMLConverter\\' => 27,
         ),
         'S' => 
         array (
@@ -89,28 +86,19 @@ class ComposerStaticInit_mediawiki_vendor
         'WikiPathways\\GPML\\Converter\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
+            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
         ),
         'WikiPathways\\GPML\\Converter\\Maintenance\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
+            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
         ),
         'WikiPathways\\GPML\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
             1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
             2 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
-        ),
-        'WikiPathways\\GPMLConverter\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
-        ),
-        'WikiPathways\\GPMLConverter\\Maintenance\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
-        ),
-        'WikiPathways\\GPMLConverter\\' => 
-        array (
-            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
+            3 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
         ),
         'Symfony\\Component\\Process\\' => 
         array (
@@ -558,11 +546,11 @@ class ComposerStaticInit_mediawiki_vendor
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit_mediawiki_vendor::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit_mediawiki_vendor::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit_mediawiki_vendor::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit_mediawiki_vendor::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit_mediawiki_vendor::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$classMap;
 
         }, null, ClassLoader::class);
     }
