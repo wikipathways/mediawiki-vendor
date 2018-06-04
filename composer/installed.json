@@ -579,23 +579,23 @@
     },
     {
         "name": "symfony/process",
-        "version": "v3.4.8",
-        "version_normalized": "3.4.8.0",
+        "version": "v3.4.11",
+        "version_normalized": "3.4.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/process.git",
-            "reference": "4b7d64e852886319e93ddfdecff0d744ab87658b"
+            "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/4b7d64e852886319e93ddfdecff0d744ab87658b",
-            "reference": "4b7d64e852886319e93ddfdecff0d744ab87658b",
+            "url": "https://api.github.com/repos/symfony/process/zipball/4cbf2db9abcb01486a21b7a059e03a62fae63187",
+            "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187",
             "shasum": ""
         },
         "require": {
             "php": "^5.5.9|>=7.0.8"
         },
-        "time": "2018-04-03T05:22:50+00:00",
+        "time": "2018-05-16T08:49:21+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1373,12 +1373,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML.git",
-            "reference": "4ab900995e52527270a45c06e617b7935c8c3c8f"
+            "reference": "a11c93e54d96adb22dfa7fd4464b78299ff7833d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/4ab900995e52527270a45c06e617b7935c8c3c8f",
-            "reference": "4ab900995e52527270a45c06e617b7935c8c3c8f",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/a11c93e54d96adb22dfa7fd4464b78299ff7833d",
+            "reference": "a11c93e54d96adb22dfa7fd4464b78299ff7833d",
             "shasum": ""
         },
         "require": {
@@ -1394,7 +1394,7 @@
             "phpmd/phpmd": "~2.1",
             "phpunit/phpunit": "4.8.36"
         },
-        "time": "2018-04-23T01:01:20+00:00",
+        "time": "2018-06-04T15:07:04+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "GPML"
@@ -1458,12 +1458,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter.git",
-            "reference": "cda9c07ed7e2bfd78ad0749eeb54901fb51f21c2"
+            "reference": "2b7edf3e6ac31681133852dd214a6a7776608ba6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/cda9c07ed7e2bfd78ad0749eeb54901fb51f21c2",
-            "reference": "cda9c07ed7e2bfd78ad0749eeb54901fb51f21c2",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/2b7edf3e6ac31681133852dd214a6a7776608ba6",
+            "reference": "2b7edf3e6ac31681133852dd214a6a7776608ba6",
             "shasum": ""
         },
         "require": {
@@ -1480,7 +1480,7 @@
             "phpmd/phpmd": "~2.1",
             "phpunit/phpunit": "4.8.36"
         },
-        "time": "2018-03-01T19:46:06+00:00",
+        "time": "2018-06-04T15:05:25+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "GPMLConverter"
@@ -1543,12 +1543,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways.git",
-            "reference": "ba3e21cd09441e041a28b57610bc4a07cb4c5b52"
+            "reference": "f1ffad0f927ee98a58ae7ecccb786a19d266377b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/ba3e21cd09441e041a28b57610bc4a07cb4c5b52",
-            "reference": "ba3e21cd09441e041a28b57610bc4a07cb4c5b52",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/f1ffad0f927ee98a58ae7ecccb786a19d266377b",
+            "reference": "f1ffad0f927ee98a58ae7ecccb786a19d266377b",
             "shasum": ""
         },
         "require": {
@@ -1557,7 +1557,7 @@
             "wikipathways/gpml": "dev-master",
             "wikipathways/gpml-converter": "dev-feature-mwupgrade"
         },
-        "time": "2018-04-23T13:57:42+00:00",
+        "time": "2018-06-03T16:46:51+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "WikiPathways"

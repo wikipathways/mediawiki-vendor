@@ -357,6 +357,7 @@ return array(
     'WikiPathways\\GPML\\AuthorInfoList' => $baseDir . '/extensions/GPML/src/AuthorInfoList.php',
     'WikiPathways\\GPML\\Content' => $baseDir . '/extensions/GPML/src/Content.php',
     'WikiPathways\\GPML\\ContentHandler' => $baseDir . '/extensions/GPML/src/ContentHandler.php',
+    'WikiPathways\\GPML\\ConvertStream' => $baseDir . '/extensions/GPMLConverter/src/ConvertStream.php',
     'WikiPathways\\GPML\\Converter' => $baseDir . '/extensions/GPMLConverter/src/Converter.php',
     'WikiPathways\\GPML\\Hook' => $baseDir . '/extensions/GPML/src/Hook.php',
     'Wikimedia\\Assert\\Assert' => $vendorDir . '/wikimedia/assert/src/Assert.php',

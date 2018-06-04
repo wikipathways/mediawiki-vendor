@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0
+class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
 {
     public static $files = array (
         'a24b5daa493ecb5e767c7d1592a8da36' => __DIR__ . '/..' . '/mediawiki/at-ease/src/Functions.php',
@@ -515,6 +515,7 @@ class ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0
         'WikiPathways\\GPML\\AuthorInfoList' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/AuthorInfoList.php',
         'WikiPathways\\GPML\\Content' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Content.php',
         'WikiPathways\\GPML\\ContentHandler' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/ContentHandler.php',
+        'WikiPathways\\GPML\\ConvertStream' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/ConvertStream.php',
         'WikiPathways\\GPML\\Converter' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/Converter.php',
         'WikiPathways\\GPML\\Hook' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Hook.php',
         'Wikimedia\\Assert\\Assert' => __DIR__ . '/..' . '/wikimedia/assert/src/Assert.php',
@@ -546,11 +547,11 @@ class ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit1030f0c2357ab87d548a66e7f59602f0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$classMap;
 
         }, null, ClassLoader::class);
     }
