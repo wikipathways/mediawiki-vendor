@@ -1373,12 +1373,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML.git",
-            "reference": "a11c93e54d96adb22dfa7fd4464b78299ff7833d"
+            "reference": "ee4558fe5682d0e342f7366063fcaf60ec3788b9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/a11c93e54d96adb22dfa7fd4464b78299ff7833d",
-            "reference": "a11c93e54d96adb22dfa7fd4464b78299ff7833d",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/ee4558fe5682d0e342f7366063fcaf60ec3788b9",
+            "reference": "ee4558fe5682d0e342f7366063fcaf60ec3788b9",
             "shasum": ""
         },
         "require": {
@@ -1394,7 +1394,7 @@
             "phpmd/phpmd": "~2.1",
             "phpunit/phpunit": "4.8.36"
         },
-        "time": "2018-06-04T15:07:04+00:00",
+        "time": "2018-06-21T22:33:58+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "GPML"
@@ -1458,12 +1458,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter.git",
-            "reference": "2b7edf3e6ac31681133852dd214a6a7776608ba6"
+            "reference": "f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/2b7edf3e6ac31681133852dd214a6a7776608ba6",
-            "reference": "2b7edf3e6ac31681133852dd214a6a7776608ba6",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d",
+            "reference": "f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d",
             "shasum": ""
         },
         "require": {
@@ -1480,7 +1480,7 @@
             "phpmd/phpmd": "~2.1",
             "phpunit/phpunit": "4.8.36"
         },
-        "time": "2018-06-04T15:05:25+00:00",
+        "time": "2018-06-21T18:54:47+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "GPMLConverter"
@@ -1543,12 +1543,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways.git",
-            "reference": "f1ffad0f927ee98a58ae7ecccb786a19d266377b"
+            "reference": "534ea0766712797e09a264253555d3989fd3f586"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/f1ffad0f927ee98a58ae7ecccb786a19d266377b",
-            "reference": "f1ffad0f927ee98a58ae7ecccb786a19d266377b",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/534ea0766712797e09a264253555d3989fd3f586",
+            "reference": "534ea0766712797e09a264253555d3989fd3f586",
             "shasum": ""
         },
         "require": {
@@ -1557,7 +1557,15 @@
             "wikipathways/gpml": "dev-master",
             "wikipathways/gpml-converter": "dev-feature-mwupgrade"
         },
-        "time": "2018-06-03T16:46:51+00:00",
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "20.0.0",
+            "mediawiki/minus-x": "0.2.1",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-06-24T04:27:01+00:00",
         "type": "mediawiki-extension",
         "extra": {
             "installer-name": "WikiPathways"
@@ -1571,7 +1579,7 @@
                 "phpcs -p -s"
             ],
             "fix": [
-                "phpcbf --standard=/home/mah/work/code/mediawiki/codesniffer/MediaWiki"
+                "phpcbf --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki"
             ],
             "pre-install-cmd": [
                 "ComposerHookHandler::onPreInstall"
