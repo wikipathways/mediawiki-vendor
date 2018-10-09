@@ -53,6 +53,7 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Seld\\JsonLint\\' => 14,
         ),
         'R' => 
         array (
@@ -180,6 +181,10 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Seld\\JsonLint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
         ),
         'RemexHtml\\' => 
         array (
@@ -1918,6 +1923,11 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'SebastianBergmann\\RecursionContext\\Exception' => __DIR__ . '/..' . '/sebastian/recursion-context/src/Exception.php',
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Seld\\JsonLint\\DuplicateKeyException' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/DuplicateKeyException.php',
+        'Seld\\JsonLint\\JsonParser' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/JsonParser.php',
+        'Seld\\JsonLint\\Lexer' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/Lexer.php',
+        'Seld\\JsonLint\\ParsingException' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/ParsingException.php',
+        'Seld\\JsonLint\\Undefined' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/Undefined.php',
         'Squiz_Sniffs_Arrays_ArrayBracketSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Arrays/ArrayBracketSpacingSniff.php',
         'Squiz_Sniffs_Arrays_ArrayDeclarationSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Arrays/ArrayDeclarationSniff.php',
         'Squiz_Sniffs_CSS_ClassDefinitionClosingBraceSpaceSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/ClassDefinitionClosingBraceSpaceSniff.php',
@@ -2206,6 +2216,7 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'WikiPathways\\GPML\\ConvertStream' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/ConvertStream.php',
         'WikiPathways\\GPML\\Converter' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/Converter.php',
         'WikiPathways\\GPML\\Hook' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Hook.php',
+        'WikiPathways\\GPML\\Widget' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Widget.php',
         'Wikimedia\\Assert\\Assert' => __DIR__ . '/..' . '/wikimedia/assert/src/Assert.php',
         'Wikimedia\\Assert\\AssertionException' => __DIR__ . '/..' . '/wikimedia/assert/src/AssertionException.php',
         'Wikimedia\\Assert\\InvariantException' => __DIR__ . '/..' . '/wikimedia/assert/src/InvariantException.php',
