@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
+class ComposerStaticInit7f1d4908925947a1dc0f8a081e287980
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -36,6 +36,9 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
             'Wikimedia\\Composer\\' => 19,
             'Wikimedia\\Assert\\Test\\' => 22,
             'Wikimedia\\Assert\\' => 17,
+            'WikiPathways\\OntologyTags\\Tests\\' => 32,
+            'WikiPathways\\OntologyTags\\Maintenance\\' => 38,
+            'WikiPathways\\OntologyTags\\' => 26,
             'WikiPathways\\GPML\\Tests\\' => 24,
             'WikiPathways\\GPML\\Maintenance\\' => 30,
             'WikiPathways\\GPML\\Converter\\Tests\\' => 34,
@@ -50,9 +53,9 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
-            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Seld\\JsonLint\\' => 14,
         ),
         'R' => 
         array (
@@ -74,10 +77,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
             'JsonSchema\\' => 11,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
-        'E' => 
-        array (
-            'Eloquent\\Composer\\NpmBridge\\' => 28,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -86,7 +85,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         array (
             'Composer\\Spdx\\' => 14,
             'Composer\\Semver\\' => 16,
-            'Composer\\Installers\\' => 20,
             'CLDRPluralRuleParser\\' => 21,
         ),
     );
@@ -118,32 +116,38 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         array (
             0 => __DIR__ . '/..' . '/wikimedia/assert/src',
         ),
+        'WikiPathways\\OntologyTags\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/tests/phpunit',
+        ),
+        'WikiPathways\\OntologyTags\\Maintenance\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/maintenance',
+        ),
+        'WikiPathways\\OntologyTags\\' => 
+        array (
+            0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/src',
+        ),
         'WikiPathways\\GPML\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/tests/phpunit',
-            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/tests/phpunit',
         ),
         'WikiPathways\\GPML\\Maintenance\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/maintenance',
-            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/maintenance',
         ),
         'WikiPathways\\GPML\\Converter\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
-            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/tests/phpunit',
         ),
         'WikiPathways\\GPML\\Converter\\Maintenance\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
-            1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/maintenance',
         ),
         'WikiPathways\\GPML\\' => 
         array (
             0 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
             1 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
-            2 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src',
-            3 => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -169,10 +173,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\Process\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/process',
-        ),
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
@@ -180,6 +180,10 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Seld\\JsonLint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
         ),
         'RemexHtml\\' => 
         array (
@@ -213,10 +217,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
         ),
-        'Eloquent\\Composer\\NpmBridge\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src',
-        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -228,10 +228,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Composer\\Semver\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
-        ),
-        'Composer\\Installers\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
         'CLDRPluralRuleParser\\' => 
         array (
@@ -345,96 +341,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Cdb\\Writer\\PHP' => __DIR__ . '/..' . '/wikimedia/cdb/src/Writer/PHP.php',
         'ComposerHookHandler' => __DIR__ . '/../..'.'/mediawiki' . '/includes/composer/ComposerHookHandler.php',
         'ComposerVendorHtaccessCreator' => __DIR__ . '/../..'.'/mediawiki' . '/includes/composer/ComposerVendorHtaccessCreator.php',
-        'Composer\\Installers\\AglInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AglInstaller.php',
-        'Composer\\Installers\\AimeosInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AimeosInstaller.php',
-        'Composer\\Installers\\AnnotateCmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php',
-        'Composer\\Installers\\AsgardInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AsgardInstaller.php',
-        'Composer\\Installers\\AttogramInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AttogramInstaller.php',
-        'Composer\\Installers\\BaseInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BaseInstaller.php',
-        'Composer\\Installers\\BitrixInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BitrixInstaller.php',
-        'Composer\\Installers\\BonefishInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BonefishInstaller.php',
-        'Composer\\Installers\\CakePHPInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CakePHPInstaller.php',
-        'Composer\\Installers\\ChefInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ChefInstaller.php',
-        'Composer\\Installers\\CiviCrmInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CiviCrmInstaller.php',
-        'Composer\\Installers\\ClanCatsFrameworkInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php',
-        'Composer\\Installers\\CockpitInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CockpitInstaller.php',
-        'Composer\\Installers\\CodeIgniterInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php',
-        'Composer\\Installers\\Concrete5Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Concrete5Installer.php',
-        'Composer\\Installers\\CraftInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CraftInstaller.php',
-        'Composer\\Installers\\CroogoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CroogoInstaller.php',
-        'Composer\\Installers\\DecibelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DecibelInstaller.php',
-        'Composer\\Installers\\DokuWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DokuWikiInstaller.php',
-        'Composer\\Installers\\DolibarrInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DolibarrInstaller.php',
-        'Composer\\Installers\\DrupalInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DrupalInstaller.php',
-        'Composer\\Installers\\ElggInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ElggInstaller.php',
-        'Composer\\Installers\\EliasisInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/EliasisInstaller.php',
-        'Composer\\Installers\\ExpressionEngineInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php',
-        'Composer\\Installers\\EzPlatformInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/EzPlatformInstaller.php',
-        'Composer\\Installers\\FuelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/FuelInstaller.php',
-        'Composer\\Installers\\FuelphpInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/FuelphpInstaller.php',
-        'Composer\\Installers\\GravInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/GravInstaller.php',
-        'Composer\\Installers\\HuradInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/HuradInstaller.php',
-        'Composer\\Installers\\ImageCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ImageCMSInstaller.php',
-        'Composer\\Installers\\Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Installer.php',
-        'Composer\\Installers\\ItopInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ItopInstaller.php',
-        'Composer\\Installers\\JoomlaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/JoomlaInstaller.php',
-        'Composer\\Installers\\KanboardInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KanboardInstaller.php',
-        'Composer\\Installers\\KirbyInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KirbyInstaller.php',
-        'Composer\\Installers\\KodiCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KodiCMSInstaller.php',
-        'Composer\\Installers\\KohanaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KohanaInstaller.php',
-        'Composer\\Installers\\LanManagementSystemInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php',
-        'Composer\\Installers\\LaravelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LaravelInstaller.php',
-        'Composer\\Installers\\LavaLiteInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LavaLiteInstaller.php',
-        'Composer\\Installers\\LithiumInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LithiumInstaller.php',
-        'Composer\\Installers\\MODULEWorkInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php',
-        'Composer\\Installers\\MODXEvoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MODXEvoInstaller.php',
-        'Composer\\Installers\\MagentoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MagentoInstaller.php',
-        'Composer\\Installers\\MajimaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MajimaInstaller.php',
-        'Composer\\Installers\\MakoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MakoInstaller.php',
-        'Composer\\Installers\\MauticInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MauticInstaller.php',
-        'Composer\\Installers\\MayaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MayaInstaller.php',
-        'Composer\\Installers\\MediaWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MediaWikiInstaller.php',
-        'Composer\\Installers\\MicroweberInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MicroweberInstaller.php',
-        'Composer\\Installers\\ModxInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ModxInstaller.php',
-        'Composer\\Installers\\MoodleInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MoodleInstaller.php',
-        'Composer\\Installers\\OctoberInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OctoberInstaller.php',
-        'Composer\\Installers\\OntoWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OntoWikiInstaller.php',
-        'Composer\\Installers\\OsclassInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OsclassInstaller.php',
-        'Composer\\Installers\\OxidInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OxidInstaller.php',
-        'Composer\\Installers\\PPIInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PPIInstaller.php',
-        'Composer\\Installers\\PhiftyInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PhiftyInstaller.php',
-        'Composer\\Installers\\PhpBBInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PhpBBInstaller.php',
-        'Composer\\Installers\\PimcoreInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PimcoreInstaller.php',
-        'Composer\\Installers\\PiwikInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PiwikInstaller.php',
-        'Composer\\Installers\\PlentymarketsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php',
-        'Composer\\Installers\\Plugin' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Plugin.php',
-        'Composer\\Installers\\PortoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PortoInstaller.php',
-        'Composer\\Installers\\PrestashopInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PrestashopInstaller.php',
-        'Composer\\Installers\\PuppetInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PuppetInstaller.php',
-        'Composer\\Installers\\PxcmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PxcmsInstaller.php',
-        'Composer\\Installers\\RadPHPInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RadPHPInstaller.php',
-        'Composer\\Installers\\ReIndexInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ReIndexInstaller.php',
-        'Composer\\Installers\\RedaxoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RedaxoInstaller.php',
-        'Composer\\Installers\\RoundcubeInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RoundcubeInstaller.php',
-        'Composer\\Installers\\SMFInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SMFInstaller.php',
-        'Composer\\Installers\\ShopwareInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ShopwareInstaller.php',
-        'Composer\\Installers\\SilverStripeInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SilverStripeInstaller.php',
-        'Composer\\Installers\\SiteDirectInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SiteDirectInstaller.php',
-        'Composer\\Installers\\SyDESInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SyDESInstaller.php',
-        'Composer\\Installers\\Symfony1Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Symfony1Installer.php',
-        'Composer\\Installers\\TYPO3CmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php',
-        'Composer\\Installers\\TYPO3FlowInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php',
-        'Composer\\Installers\\TheliaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TheliaInstaller.php',
-        'Composer\\Installers\\TuskInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TuskInstaller.php',
-        'Composer\\Installers\\UserFrostingInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/UserFrostingInstaller.php',
-        'Composer\\Installers\\VanillaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/VanillaInstaller.php',
-        'Composer\\Installers\\VgmcpInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/VgmcpInstaller.php',
-        'Composer\\Installers\\WHMCSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WHMCSInstaller.php',
-        'Composer\\Installers\\WolfCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WolfCMSInstaller.php',
-        'Composer\\Installers\\WordPressInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WordPressInstaller.php',
-        'Composer\\Installers\\YawikInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/YawikInstaller.php',
-        'Composer\\Installers\\ZendInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ZendInstaller.php',
-        'Composer\\Installers\\ZikulaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ZikulaInstaller.php',
         'Composer\\Semver\\Comparator' => __DIR__ . '/..' . '/composer/semver/src/Comparator.php',
         'Composer\\Semver\\Constraint\\AbstractConstraint' => __DIR__ . '/..' . '/composer/semver/src/Constraint/AbstractConstraint.php',
         'Composer\\Semver\\Constraint\\Constraint' => __DIR__ . '/..' . '/composer/semver/src/Constraint/Constraint.php',
@@ -449,13 +355,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Doctrine\\Instantiator\\Exception\\UnexpectedValueException' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php',
         'Doctrine\\Instantiator\\Instantiator' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php',
         'Doctrine\\Instantiator\\InstantiatorInterface' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php',
-        'Eloquent\\Composer\\NpmBridge\\Exception\\NpmCommandFailedException' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/Exception/NpmCommandFailedException.php',
-        'Eloquent\\Composer\\NpmBridge\\Exception\\NpmNotFoundException' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/Exception/NpmNotFoundException.php',
-        'Eloquent\\Composer\\NpmBridge\\NpmBridge' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/NpmBridge.php',
-        'Eloquent\\Composer\\NpmBridge\\NpmBridgeFactory' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/NpmBridgeFactory.php',
-        'Eloquent\\Composer\\NpmBridge\\NpmBridgePlugin' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/NpmBridgePlugin.php',
-        'Eloquent\\Composer\\NpmBridge\\NpmClient' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/NpmClient.php',
-        'Eloquent\\Composer\\NpmBridge\\NpmVendorFinder' => __DIR__ . '/..' . '/eloquent/composer-npm-bridge/src/NpmVendorFinder.php',
         'ExampleClass' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/tests/skip-on-5.3/class.php',
         'ExampleTrait' => __DIR__ . '/..' . '/jakub-onderka/php-parallel-lint/tests/skip-on-5.3/trait.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
@@ -1918,6 +1817,11 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'SebastianBergmann\\RecursionContext\\Exception' => __DIR__ . '/..' . '/sebastian/recursion-context/src/Exception.php',
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Seld\\JsonLint\\DuplicateKeyException' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/DuplicateKeyException.php',
+        'Seld\\JsonLint\\JsonParser' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/JsonParser.php',
+        'Seld\\JsonLint\\Lexer' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/Lexer.php',
+        'Seld\\JsonLint\\ParsingException' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/ParsingException.php',
+        'Seld\\JsonLint\\Undefined' => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint/Undefined.php',
         'Squiz_Sniffs_Arrays_ArrayBracketSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Arrays/ArrayBracketSpacingSniff.php',
         'Squiz_Sniffs_Arrays_ArrayDeclarationSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Arrays/ArrayDeclarationSniff.php',
         'Squiz_Sniffs_CSS_ClassDefinitionClosingBraceSpaceSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/ClassDefinitionClosingBraceSpaceSniff.php',
@@ -2112,23 +2016,6 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
-        'Symfony\\Component\\Process\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/process/Exception/ExceptionInterface.php',
-        'Symfony\\Component\\Process\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/symfony/process/Exception/InvalidArgumentException.php',
-        'Symfony\\Component\\Process\\Exception\\LogicException' => __DIR__ . '/..' . '/symfony/process/Exception/LogicException.php',
-        'Symfony\\Component\\Process\\Exception\\ProcessFailedException' => __DIR__ . '/..' . '/symfony/process/Exception/ProcessFailedException.php',
-        'Symfony\\Component\\Process\\Exception\\ProcessTimedOutException' => __DIR__ . '/..' . '/symfony/process/Exception/ProcessTimedOutException.php',
-        'Symfony\\Component\\Process\\Exception\\RuntimeException' => __DIR__ . '/..' . '/symfony/process/Exception/RuntimeException.php',
-        'Symfony\\Component\\Process\\ExecutableFinder' => __DIR__ . '/..' . '/symfony/process/ExecutableFinder.php',
-        'Symfony\\Component\\Process\\InputStream' => __DIR__ . '/..' . '/symfony/process/InputStream.php',
-        'Symfony\\Component\\Process\\PhpExecutableFinder' => __DIR__ . '/..' . '/symfony/process/PhpExecutableFinder.php',
-        'Symfony\\Component\\Process\\PhpProcess' => __DIR__ . '/..' . '/symfony/process/PhpProcess.php',
-        'Symfony\\Component\\Process\\Pipes\\AbstractPipes' => __DIR__ . '/..' . '/symfony/process/Pipes/AbstractPipes.php',
-        'Symfony\\Component\\Process\\Pipes\\PipesInterface' => __DIR__ . '/..' . '/symfony/process/Pipes/PipesInterface.php',
-        'Symfony\\Component\\Process\\Pipes\\UnixPipes' => __DIR__ . '/..' . '/symfony/process/Pipes/UnixPipes.php',
-        'Symfony\\Component\\Process\\Pipes\\WindowsPipes' => __DIR__ . '/..' . '/symfony/process/Pipes/WindowsPipes.php',
-        'Symfony\\Component\\Process\\Process' => __DIR__ . '/..' . '/symfony/process/Process.php',
-        'Symfony\\Component\\Process\\ProcessBuilder' => __DIR__ . '/..' . '/symfony/process/ProcessBuilder.php',
-        'Symfony\\Component\\Process\\ProcessUtils' => __DIR__ . '/..' . '/symfony/process/ProcessUtils.php',
         'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/AmqpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ArgsStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\Caster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/Caster.php',
@@ -2206,6 +2093,10 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
         'WikiPathways\\GPML\\ConvertStream' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/ConvertStream.php',
         'WikiPathways\\GPML\\Converter' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPMLConverter/src/Converter.php',
         'WikiPathways\\GPML\\Hook' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/GPML/src/Hook.php',
+        'WikiPathways\\OntologyTags\\Cache' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/src/Cache.php',
+        'WikiPathways\\OntologyTags\\Hook' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/src/Hook.php',
+        'WikiPathways\\OntologyTags\\OntologyTagsDisplays' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/src/OntologyTagsDisplays.php',
+        'WikiPathways\\OntologyTags\\OntologyTagsFunctions' => __DIR__ . '/../..'.'/mediawiki' . '/extensions/OntologyTags/src/OntologyTagsFunctions.php',
         'Wikimedia\\Assert\\Assert' => __DIR__ . '/..' . '/wikimedia/assert/src/Assert.php',
         'Wikimedia\\Assert\\AssertionException' => __DIR__ . '/..' . '/wikimedia/assert/src/AssertionException.php',
         'Wikimedia\\Assert\\InvariantException' => __DIR__ . '/..' . '/wikimedia/assert/src/InvariantException.php',
@@ -2308,11 +2199,11 @@ class ComposerStaticInit121ef767ac81923bb21394dc5dead5ef
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit121ef767ac81923bb21394dc5dead5ef::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7f1d4908925947a1dc0f8a081e287980::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7f1d4908925947a1dc0f8a081e287980::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7f1d4908925947a1dc0f8a081e287980::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit7f1d4908925947a1dc0f8a081e287980::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit7f1d4908925947a1dc0f8a081e287980::$classMap;
 
         }, null, ClassLoader::class);
     }
