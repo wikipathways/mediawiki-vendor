@@ -1,5 +1,127 @@
 [
     {
+        "name": "composer/installers",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "^4.8.36"
+        },
+        "time": "2018-08-27T06:10:37+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Eliasis",
+            "Hurad",
+            "ImageCMS",
+            "Kanboard",
+            "Lan Management System",
+            "MODX Evo",
+            "Mautic",
+            "Maya",
+            "OXID",
+            "Plentymarkets",
+            "Porto",
+            "RadPHP",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "eZ Platform",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "itop",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lavalite",
+            "lithium",
+            "magento",
+            "majima",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "modx",
+            "moodle",
+            "osclass",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "pxcms",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "sydes",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
         "name": "composer/semver",
         "version": "1.4.2",
         "version_normalized": "1.4.2.0",
@@ -252,6 +374,65 @@
         "keywords": [
             "constructor",
             "instantiate"
+        ]
+    },
+    {
+        "name": "eloquent/composer-npm-bridge",
+        "version": "4.0.1",
+        "version_normalized": "4.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/eloquent/composer-npm-bridge.git",
+            "reference": "4e6346a0162a228caf30bc10ab8442cb6be87db0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/eloquent/composer-npm-bridge/zipball/4e6346a0162a228caf30bc10ab8442cb6be87db0",
+            "reference": "4e6346a0162a228caf30bc10ab8442cb6be87db0",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1",
+            "php": ">=7"
+        },
+        "require-dev": {
+            "composer/composer": "dev-master",
+            "eloquent/phony-phpunit": "^2",
+            "errors/exceptions": "^0.2",
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2017-09-19T10:05:43+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Eloquent\\Composer\\NpmBridge\\NpmBridgePlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Eloquent\\Composer\\NpmBridge\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Erin Millard",
+                "email": "ezzatron@gmail.com",
+                "homepage": "http://ezzatron.com/"
+            }
+        ],
+        "description": "NPM integration for Composer packages.",
+        "homepage": "https://github.com/eloquent/composer-npm-bridge",
+        "keywords": [
+            "Bridge",
+            "composer",
+            "composer-plugin",
+            "integration",
+            "npm",
+            "package",
+            "plugin"
         ]
     },
     {
@@ -2135,57 +2316,6 @@
         "homepage": "https://github.com/sebastianbergmann/version"
     },
     {
-        "name": "seld/jsonlint",
-        "version": "1.7.1",
-        "version_normalized": "1.7.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Seldaek/jsonlint.git",
-            "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/d15f59a67ff805a44c50ea0516d2341740f81a38",
-            "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3 || ^7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
-        },
-        "time": "2018-01-24T12:46:19+00:00",
-        "bin": [
-            "bin/jsonlint"
-        ],
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Seld\\JsonLint\\": "src/Seld/JsonLint/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            }
-        ],
-        "description": "JSON Linter",
-        "keywords": [
-            "json",
-            "linter",
-            "parser",
-            "validator"
-        ]
-    },
-    {
         "name": "squizlabs/php_codesniffer",
         "version": "2.6.0",
         "version_normalized": "2.6.0.0",
@@ -2514,6 +2644,57 @@
             "portable",
             "shim"
         ]
+    },
+    {
+        "name": "symfony/process",
+        "version": "v3.4.17",
+        "version_normalized": "3.4.17.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/process.git",
+            "reference": "1dc2977afa7d70f90f3fefbcd84152813558910e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/process/zipball/1dc2977afa7d70f90f3fefbcd84152813558910e",
+            "reference": "1dc2977afa7d70f90f3fefbcd84152813558910e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2018-10-02T12:28:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Process\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/var-dumper",
@@ -3557,6 +3738,243 @@
         ],
         "description": "Automatically compact sequentially-outputted strings that share a common prefix / suffix pair.",
         "homepage": "https://www.mediawiki.org/wiki/WrappedString"
+    },
+    {
+        "name": "wikipathways/gpml",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML.git",
+            "reference": "36a8bbdb1f8ecfd99dc8b27dd27dca88d7f79876"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPML/zipball/36a8bbdb1f8ecfd99dc8b27dd27dca88d7f79876",
+            "reference": "36a8bbdb1f8ecfd99dc8b27dd27dca88d7f79876",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "ext-json": "*",
+            "ext-xml": "*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "14.1.0",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-10-07T02:12:29+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "GPML"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "WikiPathways\\GPML\\Tests\\": "tests/phpunit",
+                "WikiPathways\\GPML\\Maintenance\\": "maintenance",
+                "WikiPathways\\GPML\\": "src"
+            }
+        },
+        "scripts": {
+            "phpunit": [
+                "php $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "phpdbg": [
+                "phpdbg -qrr $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "check": [
+                "parallel-lint . --exclude vendor --exclude node_modules",
+                "phpmd src text .phpmd.xml || :",
+                "phpcs -p -s src"
+            ],
+            "fix": [
+                "phpcbf src"
+            ]
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Mark A. Hershberger",
+                "email": "mah@nichework.com",
+                "role": "Contributor"
+            },
+            {
+                "name": "Anders Riutta",
+                "email": "anders.riutta@gladstone.ucsf.edu",
+                "role": "Developer"
+            }
+        ],
+        "description": "Handle GPML for WikiPathways.",
+        "homepage": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML",
+        "keywords": [
+            "convert",
+            "extension",
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML/tree/master",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPML/issues"
+        }
+    },
+    {
+        "name": "wikipathways/gpml-converter",
+        "version": "dev-feature-mwupgrade",
+        "version_normalized": "dev-feature-mwupgrade",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter.git",
+            "reference": "f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/zipball/f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d",
+            "reference": "f5463a65ac3a6d9d0bbf5b0f47a942a5b315798d",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "eloquent/composer-npm-bridge": "^4",
+            "ext-json": "*",
+            "ext-xml": "*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "14.1.0",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-06-21T18:54:47+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "GPMLConverter"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "WikiPathways\\GPML\\Converter\\Tests\\": "tests/phpunit",
+                "WikiPathways\\GPML\\Converter\\Maintenance\\": "maintenance",
+                "WikiPathways\\GPML\\": "src"
+            }
+        },
+        "scripts": {
+            "phpunit": [
+                "php $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "phpdbg": [
+                "phpdbg -qrr $MW_INSTALL_PATH/tests/phpunit/phpunit.php -c .phpunit.xml.dist"
+            ],
+            "check": [
+                "parallel-lint . --exclude vendor --exclude node_modules",
+                "phpmd . text .phpmd.xml || :",
+                "phpcs -p -s"
+            ],
+            "fix": [
+                "phpcbf"
+            ]
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Anders",
+                "role": "Developer"
+            },
+            {
+                "name": "Mark A. Hershberger",
+                "email": "mah@nichework.com",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Convert GPML pathways to JSON.",
+        "homepage": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter",
+        "keywords": [
+            "convert",
+            "extension",
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/tree/feature-mwupgrade",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways-GPMLConverter/issues"
+        }
+    },
+    {
+        "name": "wikipathways/wikipathways",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways.git",
+            "reference": "a352c7f2f80cbcd739549229b58699fb9dfe1cca"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wikipathways/mediawiki-extensions-WikiPathways/zipball/a352c7f2f80cbcd739549229b58699fb9dfe1cca",
+            "reference": "a352c7f2f80cbcd739549229b58699fb9dfe1cca",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*,>=1.0.1",
+            "php": ">=5.6.0",
+            "wikipathways/gpml": "dev-master",
+            "wikipathways/gpml-converter": "dev-feature-mwupgrade"
+        },
+        "require-dev": {
+            "jakub-onderka/php-console-highlighter": "0.3.2",
+            "jakub-onderka/php-parallel-lint": "0.9.2",
+            "mediawiki/mediawiki-codesniffer": "20.0.0",
+            "mediawiki/minus-x": "0.2.1",
+            "phpmd/phpmd": "~2.1",
+            "phpunit/phpunit": "4.8.36"
+        },
+        "time": "2018-10-16T01:48:02+00:00",
+        "type": "mediawiki-extension",
+        "extra": {
+            "installer-name": "WikiPathways"
+        },
+        "installation-source": "source",
+        "scripts": {
+            "lint": [
+                "parallel-lint --exclude vendor"
+            ],
+            "phpcs": [
+                "phpcs -p -s"
+            ],
+            "fix": [
+                "phpcbf --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki"
+            ],
+            "pre-install-cmd": [
+                "ComposerHookHandler::onPreInstall"
+            ],
+            "pre-update-cmd": [
+                "ComposerHookHandler::onPreUpdate"
+            ],
+            "test": [
+                "composer lint",
+                "composer phpcs"
+            ]
+        },
+        "description": "Brings Wikipathways to life",
+        "homepage": "https://www.wikipathways.org/",
+        "keywords": [
+            "mediawiki",
+            "wiki"
+        ],
+        "support": {
+            "source": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways/tree/master",
+            "issues": "https://github.com/wikipathways/mediawiki-extensions-WikiPathways/issues"
+        }
     },
     {
         "name": "wmde/hamcrest-html-matchers",
