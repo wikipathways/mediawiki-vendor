@@ -22,7 +22,7 @@ def cleanup_class_name class_name
 end
 
 def extract_default_from_description item
-	m = item[:description].match(/\(default: (.+?)\)\s*?$/i)
+	m = item[:description].match(/\(default: (.+?)\)\s*?$/)
 	return if !m
 	# modify `item` in-place
 	item[:default] = m[1]
@@ -73,7 +73,6 @@ def parse_file filename
 
 		js_class_constructor = false
 		js_class_constructor_desc = ''
-		php_trait_constructor = false
 		ignore = false
 
 		comment, code_line = d.split '*/'
@@ -224,7 +223,6 @@ def parse_file filename
 				data[:static] = true if static
 				data[:parent] = cleanup_class_name(parent) if parent
 				data[:name] ||= cleanup_class_name(name)
-				php_trait_constructor = true if kind == :method && data[:name] == 'initialize' + current_class[:name]
 			end
 		end
 
@@ -239,8 +237,7 @@ def parse_file filename
 		end
 
 		# standardize
-		# (also handle fake constructors for traits)
-		if data[:name] == '__construct' || js_class_constructor || php_trait_constructor
+		if data[:name] == '__construct' || js_class_constructor
 			data[:name] = '#constructor'
 		end
 
@@ -261,7 +258,7 @@ def parse_file filename
 	# this is evil, assumes we only have one class in a file, but we'd need a proper parser to do it better
 	if current_class
 		current_class[:mixins] +=
-			text.scan(/^[ \t]*use (\w+)(?: ?\{|;)/).flatten.map(&method(:cleanup_class_name))
+			text.scan(/[ \t]use (\w+)(?: ?\{|;)/).flatten.map(&method(:cleanup_class_name))
 	end
 
 	output << current_class if current_class

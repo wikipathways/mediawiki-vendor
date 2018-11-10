@@ -7,6 +7,10 @@ namespace OOUI;
  */
 class CheckboxMultiselectInputWidget extends InputWidget {
 
+	/* Static Properties */
+
+	public static $supportsSimpleLabel = false;
+
 	/* Properties */
 
 	/**
@@ -50,7 +54,7 @@ class CheckboxMultiselectInputWidget extends InputWidget {
 
 	protected function getInputElement( $config ) {
 		// Actually unused
-		return new Tag( 'unused' );
+		return new Tag( 'div' );
 	}
 
 	/**

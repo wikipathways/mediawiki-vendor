@@ -5,8 +5,7 @@
 			"Unai Fdz. de Betoño",
 			"Xabier Armendaritz",
 			"Subi",
-			"Sator",
-			"Mikel Ibaiba"
+			"Sator"
 		]
 	},
 	"ooui-outline-control-move-down": "Mugitu itema beherantz",
@@ -15,7 +14,6 @@
 	"ooui-toolbar-more": "Gehiago",
 	"ooui-toolgroup-expand": "Gehiago",
 	"ooui-toolgroup-collapse": "Gutxiago",
-	"ooui-item-remove": "Ezabatu",
 	"ooui-dialog-message-accept": "Ados",
 	"ooui-dialog-message-reject": "Utzi",
 	"ooui-dialog-process-error": "Zerbaitek huts egin du",

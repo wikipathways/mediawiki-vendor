@@ -9,14 +9,12 @@
 	require_once $autoload;
 	require_once 'classes/ButtonStyleShowcaseWidget.php';
 
-	// @codingStandardsIgnoreStart MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment
 	$themes = [
-		'wikimediaui' => 'WikimediaUI', // Do not change this line or you'll break `grunt add-theme`
+		'mediawiki' => 'MediaWiki', // Do not change this line or you'll break `grunt add-theme`
 		'apex' => 'Apex',
 	];
-	// @codingStandardsIgnoreEnd MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment
 	$theme = ( isset( $_GET['theme'] ) && isset( $themes[ $_GET['theme'] ] ) )
-		? $_GET['theme'] : 'wikimediaui';
+		? $_GET['theme'] : 'mediawiki';
 	$themeClass = 'OOUI\\' . $themes[ $theme ] . 'Theme';
 	OOUI\Theme::setSingleton( new $themeClass() );
 
@@ -30,70 +28,31 @@
 		? $_GET['page'] : 'widgets';
 
 	$query = [
-		'page' => $page,
 		'theme' => $theme,
 		'direction' => $direction,
+		'page' => $page,
 	];
-
-	$additionalThemeImagesSuffixes = [
-		'wikimediaui' => [
-			'-icons-movement',
-			'-icons-content',
-			'-icons-alerts',
-			'-icons-interactions',
-			'-icons-moderation',
-			'-icons-editing-core',
-			'-icons-editing-styling',
-			'-icons-editing-list',
-			'-icons-editing-advanced',
-			'-icons-media',
-			'-icons-location',
-			'-icons-user',
-			'-icons-layout',
-			'-icons-accessibility',
-			'-icons-wikimedia'
-		],
-		'apex' => [
-			'-icons-movement',
-			'-icons-content',
-			'-icons-alerts',
-			'-icons-interactions',
-			'-icons-moderation',
-			'-icons-editing-core',
-			'-icons-editing-styling',
-			'-icons-editing-list',
-			'-icons-editing-advanced',
-			'-icons-media',
-			'-icons-user',
-			'-icons-layout',
-			'-icons-accessibility'
-		]
-	];
-	// Stylesheets to load
-	$urls = [];
-	$urls[] = "oojs-ui-core-$theme$directionSuffix.css";
-	$urls[] = "oojs-ui-images-$theme$directionSuffix.css";
-	foreach ( $additionalThemeImagesSuffixes[ $theme ] as $suffix ) {
-		$urls[] = "oojs-ui-$theme$suffix$directionSuffix.css";
-	}
+	// E.g. oojs-ui-core-apex.rtl.css
+	$styleFileName = "oojs-ui-core-$theme$directionSuffix.css";
+	// E.g. oojs-ui-images-apex.rtl.css
+	$styleFileNameImages = "oojs-ui-images-$theme$directionSuffix.css";
+	// E.g. oojs-ui-apex-icons-content.rtl.css
+	$styleFileNameExtraIcons = "oojs-ui-$theme-icons-content$directionSuffix.css";
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="<?php echo $direction; ?>">
 <head>
 	<meta charset="UTF-8">
 	<title>OOjs UI Widget Demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?php
-		foreach ( $urls as $url ) {
-			echo '<link rel="stylesheet" href="dist/' . htmlspecialchars( $url ) . '">' . "\n";
-		}
-	?>
+	<link rel="stylesheet" href="dist/<?php echo $styleFileName; ?>">
+	<link rel="stylesheet" href="dist/<?php echo $styleFileNameImages; ?>">
+	<link rel="stylesheet" href="dist/<?php echo $styleFileNameExtraIcons; ?>">
 	<link rel="stylesheet" href="styles/demo<?php echo $directionSuffix; ?>.css">
 	<link rel="stylesheet" href="classes/ButtonStyleShowcaseWidget.css">
 </head>
 <body class="oo-ui-<?php echo $direction; ?>">
 	<div class="demo">
-		<div class="demo-menu" role="navigation">
+		<div class="demo-menu">
 			<?php
 				echo new OOUI\ButtonGroupWidget( [
 					'infusable' => true,
@@ -126,7 +85,7 @@
 					'items' => [
 						new OOUI\ButtonWidget( [
 							'label' => 'JS',
-							'href' => '.?' . http_build_query( $query ),
+							'href' => ".#$page-$theme-$direction",
 							'active' => false,
 						] ),
 						new OOUI\ButtonWidget( [

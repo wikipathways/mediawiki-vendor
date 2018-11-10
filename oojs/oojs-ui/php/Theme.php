@@ -16,7 +16,7 @@ abstract class Theme {
 	/* Static Methods */
 
 	/**
-	 * @param Theme|null $theme Theme to use throughout the application
+	 * @param Theme|null $theme
 	 */
 	public static function setSingleton( Theme $theme = null ) {
 		self::$singleton = $theme;

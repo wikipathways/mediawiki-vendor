@@ -37,7 +37,7 @@ class LabelWidget extends Widget {
 		$this->input = isset( $config['input'] ) ? $config['input'] : null;
 
 		// Initialization
-		if ( $this->input && $this->input->getInputId() ) {
+		if ( $this->input instanceof InputWidget ) {
 			$this->setAttributes( [ 'for' => $this->input->getInputId() ] );
 		}
 		$this->addClasses( [ 'oo-ui-labelWidget' ] );

@@ -15,5 +15,5 @@ Demo.DraggableHandledItemWidget = function DemoDraggableHandledItemWidget( confi
 };
 
 /* Setup */
-OO.inheritClass( Demo.DraggableHandledItemWidget, Demo.SimpleWidget );
+OO.inheritClass( Demo.DraggableHandledItemWidget, OO.ui.DecoratedOptionWidget );
 OO.mixinClass( Demo.DraggableHandledItemWidget, OO.ui.mixin.DraggableElement );

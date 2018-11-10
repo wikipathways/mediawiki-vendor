@@ -28,11 +28,13 @@ class FieldsetLayout extends Layout {
 
 		// Traits
 		$this->initializeIconElement( $config );
-		$this->initializeLabelElement( $config );
+		$this->initializeLabelElement( array_merge( $config, [
+			'labelElement' => new Tag( 'div' )
+		] ) );
 		$this->initializeGroupElement( $config );
 
 		// Properties
-		$this->header = new Tag( 'legend' );
+		$this->header = new Tag( 'div' );
 
 		// Initialization
 		$this->header

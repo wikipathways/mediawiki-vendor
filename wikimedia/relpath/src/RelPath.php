@@ -38,14 +38,6 @@ function splitPath( $path ) {
 
 	while ( true ) {
 		$cur = dirname( $path );
-		if ( $cur[0] === DIRECTORY_SEPARATOR ) {
-			// dirname() on Windows sometimes returns a leading backslash, but other
-			// times retains the leading forward slash. Slashes other than the leading one
-			// are returned as-is, and therefore do not need to be touched.
-			// Furthermore, don't break on *nix where \ is allowed in file/directory names.
-			$cur[0] = '/';
-		}
-
 		if ( $cur === $path || ( $cur === '.' && basename( $path ) === $path ) ) {
 			break;
 		}
@@ -77,14 +69,12 @@ function splitPath( $path ) {
  * @param string $path File path.
  * @param string $start Start directory. Optional; if not specified, the current
  *  working directory will be used.
- * @return string|bool Relative path, or false if input was invalid.
+ * @return array|bool Array of path components or false if file does not exist.
  */
 function getRelativePath( $path, $start = null ) {
 	if ( $start === null ) {
-		// @codeCoverageIgnoreStart
 		$start = getcwd();
 	}
-	// @codeCoverageIgnoreEnd
 
 	if ( substr( $path, 0, 1 ) !== '/' || substr( $start, 0, 1 ) !== '/' ) {
 		return false;

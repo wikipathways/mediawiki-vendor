@@ -9,8 +9,7 @@
 			"Simeondahl",
 			"Tehnix",
 			"Macofe",
-			"Peter Alberti",
-			"Joedalton"
+			"Peter Alberti"
 		]
 	},
 	"ooui-outline-control-move-down": "Flyt ned",
@@ -23,6 +22,5 @@
 	"ooui-dialog-process-error": "Noget gik galt",
 	"ooui-dialog-process-retry": "Prøv igen",
 	"ooui-dialog-process-continue": "Fortsæt",
-	"ooui-selectfile-button-select": "Vælg en fil",
-	"ooui-selectfile-dragdrop-placeholder": "Smid filen her"
+	"ooui-selectfile-button-select": "Vælg en fil"
 }
