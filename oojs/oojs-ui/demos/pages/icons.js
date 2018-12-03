@@ -2,19 +2,18 @@ Demo.static.pages.icons = function ( demo ) {
 	var i, len, iconSet, iconsFieldset, iconWidget, selector,
 		icons = {
 			movement: [
-				'arrowLast',
+				'arrowPrevious',
 				'arrowNext',
 				'downTriangle',
 				'upTriangle',
+				'first',
 				'previous',
 				'next',
+				'last',
 				'expand',
 				'collapse',
-				'caretLast',
-				'caretNext',
-				'caretDown',
-				'caretUp',
-				'move'
+				'move',
+				'draggable'
 			],
 			content: [
 				'article',
@@ -38,13 +37,9 @@ Demo.static.pages.icons = function ( demo ) {
 			alerts: [
 				'alert',
 				'bell',
-				'bellOn',
 				'comment',
-				'eye',
-				'eyeClosed',
 				'message',
 				'notice',
-				'signature',
 				'speechBubble',
 				'speechBubbleAdd',
 				'speechBubbles',
@@ -53,10 +48,10 @@ Demo.static.pages.icons = function ( demo ) {
 			interactions: [
 				'add',
 				'advanced',
-				'bookmark',
 				'browser',
 				'cancel',
 				'check',
+				'checkAll',
 				'clear',
 				'clock',
 				'close',
@@ -67,16 +62,18 @@ Demo.static.pages.icons = function ( demo ) {
 				'help',
 				'key',
 				'keyboard',
+				'lightbulb',
 				'logOut',
 				'newWindow',
 				'printer',
+				'reload',
 				'search',
 				'settings',
-				'subtract',
-				'sun',
-				'watchlist'
+				'subtract'
 			],
 			moderation: [
+				'bookmarkOutline',
+				'bookmark',
 				'block',
 				'unBlock',
 				'flag',
@@ -88,6 +85,7 @@ Demo.static.pages.icons = function ( demo ) {
 				'unStar',
 				'trash',
 				'unTrash',
+				'pushPin',
 				'ongoingConversation'
 			],
 			'editing-core': [
@@ -121,7 +119,7 @@ Demo.static.pages.icons = function ( demo ) {
 				'outdent'
 			],
 			'editing-advanced': [
-				'alignCentre',
+				'alignCenter',
 				'alignLeft',
 				'alignRight',
 				'attachment',
@@ -136,10 +134,10 @@ Demo.static.pages.icons = function ( demo ) {
 				'outline',
 				'puzzle',
 				'quotes',
-				'quotesAdd',
 				'searchCaseSensitive',
 				'searchDiacritics',
 				'searchRegularExpression',
+				'signature',
 				'specialCharacter',
 				'table',
 				'tableAddColumnAfter',
@@ -148,16 +146,23 @@ Demo.static.pages.icons = function ( demo ) {
 				'tableAddRowBefore',
 				'tableCaption',
 				'tableMergeCells',
+				'tableMoveColumnAfter',
+				'tableMoveColumnBefore',
+				'tableMoveRowAfter',
+				'tableMoveRowBefore',
 				'templateAdd',
 				'wikiText'
 			],
 			media: [
 				'fullScreen',
+				'exitFullscreen',
 				'image',
 				'imageAdd',
 				'imageLock',
 				'imageGallery',
+				'imageBroken',
 				'play',
+				'pause',
 				'stop'
 			],
 			location: [
@@ -167,15 +172,13 @@ Demo.static.pages.icons = function ( demo ) {
 				'mapTrail'
 			],
 			user: [
-				'userActive',
+				'userAnonymous',
 				'userAvatar',
-				'userInactive',
 				'userTalk'
 			],
 			layout: [
 				'menu',
 				'stripeFlow',
-				'stripeSideMenu',
 				'stripeSummary',
 				'stripeToC',
 				'viewCompact',
@@ -185,6 +188,8 @@ Demo.static.pages.icons = function ( demo ) {
 				'bright',
 				'halfBright',
 				'notBright',
+				'eye',
+				'eyeClosed',
 				'moon',
 				'largerText',
 				'smallerText',
@@ -198,11 +203,8 @@ Demo.static.pages.icons = function ( demo ) {
 			]
 		},
 		indicators = [
-			'alert',
 			'clear',
 			'down',
-			'next',
-			'previous',
 			'required',
 			'search',
 			'up'
@@ -251,7 +253,6 @@ Demo.static.pages.icons = function ( demo ) {
 				flags: [],
 				data: {
 					progressive: false,
-					constructive: false,
 					destructive: false
 				}
 			} ),
@@ -260,7 +261,6 @@ Demo.static.pages.icons = function ( demo ) {
 				flags: [ 'progressive' ],
 				data: {
 					progressive: true,
-					constructive: false,
 					destructive: false
 				}
 			} ),
@@ -269,7 +269,6 @@ Demo.static.pages.icons = function ( demo ) {
 				flags: [ 'destructive' ],
 				data: {
 					progressive: false,
-					constructive: false,
 					destructive: true
 				}
 			} )
@@ -284,7 +283,6 @@ Demo.static.pages.icons = function ( demo ) {
 		} )
 		.selectItemByData( {
 			progressive: false,
-			constructive: false,
 			destructive: false
 		} );
 
@@ -294,6 +292,7 @@ Demo.static.pages.icons = function ( demo ) {
 			framed: true
 		} ).$element
 			.addClass( 'demo-container demo-icons' )
+			.attr( 'role', 'main' )
 			.append(
 				selector.$element,
 				indicatorsFieldset.$element,

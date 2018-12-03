@@ -110,7 +110,7 @@ class FieldLayout extends Layout {
 			array_merge( $config, [ 'titled' => $this->label ] ) );
 
 		// Initialization
-		if ( $fieldWidget::$supportsSimpleLabel ) {
+		if ( $this->fieldWidget->getInputId() ) {
 			$this->label->setAttributes( [ 'for' => $this->fieldWidget->getInputId() ] );
 		}
 		$this
@@ -135,6 +135,8 @@ class FieldLayout extends Layout {
 		}
 
 		$this->setAlignment( $config['align'] );
+		// Call this again to take into account the widget's accessKey
+		$this->updateTitle();
 	}
 
 	/**
@@ -146,8 +148,9 @@ class FieldLayout extends Layout {
 		$listItem = new Tag( 'li' );
 		if ( $kind === 'error' ) {
 			$icon = new IconWidget( [ 'icon' => 'alert', 'flags' => [ 'warning' ] ] );
+			$listItem->setAttributes( [ 'role' => 'alert' ] );
 		} elseif ( $kind === 'notice' ) {
-			$icon = new IconWidget( [ 'icon' => 'info' ] );
+			$icon = new IconWidget( [ 'icon' => 'notice' ] );
 		} else {
 			$icon = null;
 		}
@@ -198,10 +201,10 @@ class FieldLayout extends Layout {
 			// Reorder elements
 			$this->body->clearContent();
 			if ( $value === 'top' ) {
-				$this->header->appendContent( $this->label, $this->help );
+				$this->header->appendContent( $this->help, $this->label );
 				$this->body->appendContent( $this->header, $this->field );
 			} elseif ( $value === 'inline' ) {
-				$this->header->appendContent( $this->label, $this->help );
+				$this->header->appendContent( $this->help, $this->label );
 				$this->body->appendContent( $this->field, $this->header );
 			} else {
 				$this->header->appendContent( $this->label );
@@ -222,6 +225,20 @@ class FieldLayout extends Layout {
 		return $this;
 	}
 
+	/**
+	 * Include information about the widget's accessKey in our title. TitledElement calls this method.
+	 * (This is a bit of a hack.)
+	 *
+	 * @param string $title Tooltip label for 'title' attribute
+	 * @return string
+	 */
+	protected function formatTitleWithAccessKey( $title ) {
+		if ( $this->fieldWidget && method_exists( $this->fieldWidget, 'formatTitleWithAccessKey' ) ) {
+			return $this->fieldWidget->formatTitleWithAccessKey( $title );
+		}
+		return $title;
+	}
+
 	public function getConfig( &$config ) {
 		$config['fieldWidget'] = $this->fieldWidget;
 		$config['align'] = $this->align;
@@ -230,6 +247,7 @@ class FieldLayout extends Layout {
 		if ( $this->help !== '' ) {
 			$config['help'] = $this->help->getTitle();
 		}
+		$config['$overlay'] = true;
 		return parent::getConfig( $config );
 	}
 }
